@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Button, Container, Form, Image } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+
 import Login from '../../assets/images/login.png'
 
 import '../../styles/home.scss';
@@ -25,7 +26,7 @@ function HomeLogin(props){
         </div>
         <Button className="btn mt-3">Entrar</Button>
       </Form>
-      <div className="text-center fs6"><a href='#'>Cadastro</a> ou <a href='#'>Contato</a> </div>
+      <div className="text-center fs6"><Link to="/register">Cadastro</Link> ou <a href='#'>Contato</a> </div>
     </Container>
   )
 }
