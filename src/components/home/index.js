@@ -2,7 +2,7 @@ import { faKey, faUser } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Button, Container, Form, Image } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+
 import Login from '../../assets/images/login.png'
 
 import '../../styles/home.scss';
