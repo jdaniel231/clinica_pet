@@ -1,8 +1,9 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import PrivateRoute from './components/auth/private_route';
 import HomeLogin from './components/home';
 import RegisterScreen from './screen/auth/register';
-import PetsScreen from './screen/pets';
+import PetsScreen from './screen/pets/index';
 
 const Routes = () => (
   
@@ -10,7 +11,7 @@ const Routes = () => (
       <Switch>
         <Route exact path="/" component={HomeLogin} />
         <Route exact path="/register" component={RegisterScreen} />
-        <Routes exact path="/pets" component={PetsScreen} />
+        <PrivateRoute exact path="/pets" component={PetsScreen} />
       </Switch>
     </BrowserRouter>
 )
